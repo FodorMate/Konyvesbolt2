@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap-grid.min.css" integrity="sha512-JQksK36WdRekVrvdxNyV3B0Q1huqbTkIQNbz1dlcFVgNynEMRl0F8OSqOGdVppLUDIvsOejhr/W5L3G/b3J+8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Könyvesbolt</title>
+</head>
+<body>
+
+    <h1>Könyvesbolt adatkezelő felület</h1>
+    
+    <form>
+        <fieldset>
+            <legend>Keresési feltételek</legend>
+        <input type="text" id="vasarloid" name="vasarloid" placeholder="vasarloid">
+        <input type="text" id="nev" name="nev" placeholder="Vásárló név">
+        <input type="email" id="email_cim" name="email_cim" placeholder="Email cím" required>
+        <input type="text"  id="felhasznalonev" name="felhasznalonev" placeholder="felhasznalonev">
+        <input type="password" id="jelszo" name="jelszo" placeholder="Jelszo">
+        
+            <br><br>
+        <button type="button" id="insert">Új vásárlás</button>
+        <button type="button" id="update">Módosítás</button>
+        <button type="button" id="readall">Kilistáz</button>
+        <button type="button" id="delete">Töröl</button>
+        </fieldset>
+    </form>
+
+    <div id="vasarlok">
+        <div class="card">
+          <p class="card-header">VásárlóId</p>
+          <p class="card-body">Vásárló név</p>
+          <p class="card-body">Email</p>
+          <p class="card-body">Felhasználónév</p>
+          <p class="card-body">Jelszó</p>
+        </div>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>  
+</body>
+</html>
